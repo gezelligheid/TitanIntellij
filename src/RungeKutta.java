@@ -9,10 +9,26 @@ import static java.lang.Math.*;
  * <p>
  * Notice that at the moment of writing, the class is not generified.
  * Also notice that an equation is chosen of which the exact solution is known so that it is easy to check the accuracy.
+ *
+ * source: https://rosettacode.org/wiki/Runge-Kutta_method#Java
  **/
 
 public class RungeKutta {
 
+
+    /**
+     * simple runge-kutta. initial conditions are t = start value of the for-loop, where y[t] = set to some initial value
+     *
+     *
+     * @param yp_func One can best understand this parameter by thinking the following: let BiFunction<T,U,R> be a
+     *               function of generic types, in this case all doubles and  behaves as function(T arg1,U arg2) =
+     *               (some stuff that is a function of arg1 and arg2 that will result in a return of the type R, namely
+     *               R arg3. Now here comes the beauty, the function can then be used throughout it's scope. and can
+     *               easily be defined by a lambda expression.
+     * @param t an array having one element for each time step to be recorded.
+     * @param y records y values y[i] at step t[i]
+     * @param dt step size
+     *            */
     static void runge(BiFunction<Double, Double, Double> yp_func, double[] t,
                       double[] y, double dt) {
 
@@ -27,15 +43,16 @@ public class RungeKutta {
     }
 
     static double calc_err(double t, double calc) {
-        double actual = pow(pow(t, 2.0) + 4.0, 2) / 16.0;
+        double actual = pow(pow(t, 2.0) + 4.0, 2) / 16.0; // exact value is known
         return abs(actual - calc);
     }
 
     public static void main(String[] args) {
-        double dt = 0.10;
-        double[] t_arr = new double[101];
-        double[] y_arr = new double[101];
-        y_arr[0] = 1.0;
+        double dt = 0.10; // step size
+        double[] t_arr = new double[101]; // array that will contain t values
+        double[] y_arr = new double[101]; // array that will contain y values
+        y_arr[0] = 1.0; // initial condition
+
 
         runge((t, y) -> t * sqrt(y), t_arr, y_arr, dt);
 
