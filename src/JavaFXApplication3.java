@@ -4,7 +4,6 @@ import javafx.animation.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Ellipse;
 import javafx.stage.Stage;
-import javafx.scene.Group;
 
 
 import javafx.application.Application;
@@ -21,7 +20,6 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.paint.PhongMaterial;
 import javafx.scene.shape.*;
 import javafx.scene.transform.Rotate;
-import javafx.stage.Stage;
 import javafx.util.Duration;
 
 public class JavaFXApplication3 extends Application {
@@ -44,7 +42,7 @@ public class JavaFXApplication3 extends Application {
     Sphere earth;
     Sphere mars;
     Sphere jupiter;
-    Sphere satrun;
+    Sphere saturn;
     Sphere uranus;
     Sphere neptune;
     Sphere titan;
@@ -64,7 +62,7 @@ public class JavaFXApplication3 extends Application {
         earth = new Sphere(3.15*0.5);
         mars = new Sphere(1.7*0.5);
         jupiter = new Sphere(35*0.5);
-        satrun = new Sphere(27.8*0.5);
+        saturn = new Sphere(27.8*0.5);
         uranus = new Sphere(3*12.6*0.5);
         neptune = new Sphere(12.3*0.5);
         titan = new Sphere(1.28*0.5);
@@ -80,7 +78,7 @@ public class JavaFXApplication3 extends Application {
         Ellipse pathEarth = createPath(venus.getBoundsInLocal().getWidth() / 2.0 + 1 * (748*0.5), venus.getBoundsInLocal().getHeight() / 2.0 + 0.983 * (748*0.5));
         Ellipse pathmars = createPath(earth.getBoundsInLocal().getWidth() / 2.0 + 1 * (1139*0.5), earth.getBoundsInLocal().getHeight() / 2.0 + 0.906 * (1139*0.5));
         Ellipse pathsaturn = createPath(jupiter.getBoundsInLocal().getWidth() / 2.0 + 1 * (7167.5*0.5), jupiter.getBoundsInLocal().getHeight() / 2.0 + 0.943 * (7167.5*0.5));
-        Ellipse pathUranus = createPath(satrun.getBoundsInLocal().getWidth() / 2.0 + 1 * (14362*0.5), satrun.getBoundsInLocal().getHeight() / 2.0 + 0.954 * (14362*0.5));
+        Ellipse pathUranus = createPath(saturn.getBoundsInLocal().getWidth() / 2.0 + 1 * (14362*0.5), saturn.getBoundsInLocal().getHeight() / 2.0 + 0.954 * (14362*0.5));
         Ellipse pathNeptune = createPath(uranus.getBoundsInLocal().getWidth() / 2.0 + 1 * (22475*0.5), uranus.getBoundsInLocal().getHeight() / 2.0 + 0.98 * (22475*0.5));
         Ellipse pathjupiter = createPath(mars.getBoundsInLocal().getWidth() / 2.0 + 1 * (3893*0.5), mars.getBoundsInLocal().getHeight() / 2.0 + 0.951 * (3893*0.5));
 
@@ -194,22 +192,22 @@ public class JavaFXApplication3 extends Application {
         ellipseSatrun.setRadiusY(jupiter.getBoundsInLocal().getHeight() / 2.0 + 0.943 * (7167.5*0.5));
         PhongMaterial material6 = new PhongMaterial();
         material6.setDiffuseMap(getImageFromResource("/saturn.jpg"));
-        satrun.setMaterial(material6);
+        saturn.setMaterial(material6);
 
         PathTransition transitionSatrun = new PathTransition();
         transitionSatrun.setPath(ellipseSatrun);
-        transitionSatrun.setNode(satrun);
+        transitionSatrun.setNode(saturn);
         transitionSatrun.setInterpolator(Interpolator.LINEAR);
         transitionSatrun.setDuration(Duration.seconds(timer * Math.pow(9.55475 , 1.5)));
         transitionSatrun.setOrientation(PathTransition.OrientationType.ORTHOGONAL_TO_TANGENT);
         transitionSatrun.setCycleCount(Timeline.INDEFINITE);
 
         transitionSatrun.play();
-        rotatePlanet(satrun);
+        rotatePlanet(saturn);
 
         Ellipse ellipseTitan = new Ellipse();
-        ellipseTitan.setRadiusX(satrun.getBoundsInLocal().getWidth() / 2.0 + (1 *12*0.5));
-        ellipseTitan.setRadiusY(satrun.getBoundsInLocal().getHeight() / 2.0 + (9.9112*12*0.5));
+        ellipseTitan.setRadiusX(saturn.getBoundsInLocal().getWidth() / 2.0 + (1 *12*0.5));
+        ellipseTitan.setRadiusY(saturn.getBoundsInLocal().getHeight() / 2.0 + (9.9112*12*0.5));
 
         PhongMaterial material10 = new PhongMaterial();
         material10.setDiffuseMap(getImageFromResource("/titan.jpg"));
@@ -227,8 +225,8 @@ public class JavaFXApplication3 extends Application {
         rotatePlanet(titan);
 
         Ellipse ellipseUranus = new Ellipse();
-        ellipseUranus.setRadiusX(satrun.getBoundsInLocal().getWidth() / 2.0 + 1 * (14362*0.5));
-        ellipseUranus.setRadiusY(satrun.getBoundsInLocal().getHeight() / 2.0 + 0.954 * (14362*0.5));
+        ellipseUranus.setRadiusX(saturn.getBoundsInLocal().getWidth() / 2.0 + 1 * (14362*0.5));
+        ellipseUranus.setRadiusY(saturn.getBoundsInLocal().getHeight() / 2.0 + 0.954 * (14362*0.5));
         PhongMaterial material7 = new PhongMaterial();
         material7.setDiffuseMap(getImageFromResource("/uranus.jpg"));
         uranus.setMaterial(material7);
@@ -280,8 +278,8 @@ public class JavaFXApplication3 extends Application {
 
 
         Pane moonPane = new Pane();
-        moonPane.translateXProperty().bind(satrun.translateXProperty());
-        moonPane.translateYProperty().bind(satrun.translateYProperty());
+        moonPane.translateXProperty().bind(saturn.translateXProperty());
+        moonPane.translateYProperty().bind(saturn.translateYProperty());
         moonPane.setMaxSize(200, 200);
         moonPane.getChildren().add(titan);
 
@@ -296,7 +294,7 @@ public class JavaFXApplication3 extends Application {
         root.getChildren().addAll(sun, ellipseMercury, ellipseVenus,ellipseEarth,
                 ellipseMars, ellipseJupiter, ellipseSatrun,
                 ellipseUranus,ellipseNeptune, ellipseTitan , venus,
-                Mercury,earth, mars, jupiter,satrun,uranus, neptune, moonPane, pathjupiter, pathmars,
+                Mercury,earth, mars, jupiter, saturn,uranus, neptune, moonPane, pathjupiter, pathmars,
                 pathUranus, pathsaturn, pathNeptune, pathEarth, pathVenus, pathMercury  );
 
         Camera camera = new PerspectiveCamera();
@@ -358,7 +356,7 @@ public class JavaFXApplication3 extends Application {
         planets[3] = earth;
         planets[4] = mars;
         planets[5] = jupiter;
-        planets[6] = satrun;
+        planets[6] = saturn;
         planets[7] = uranus;
         planets[8] = neptune;
         planets[9] = titan;
