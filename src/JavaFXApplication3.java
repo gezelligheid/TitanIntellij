@@ -1,12 +1,4 @@
-import javafx.animation.KeyFrame;
 import javafx.animation.*;
-
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Ellipse;
-import javafx.stage.Stage;
-import javafx.scene.Group;
-
-
 import javafx.application.Application;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;
@@ -18,8 +10,10 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.paint.Color;
 import javafx.scene.paint.PhongMaterial;
-import javafx.scene.shape.*;
+import javafx.scene.shape.Ellipse;
+import javafx.scene.shape.Sphere;
 import javafx.scene.transform.Rotate;
 import javafx.stage.Stage;
 import javafx.util.Duration;
