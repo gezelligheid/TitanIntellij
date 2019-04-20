@@ -45,7 +45,7 @@ public class RungeKutta {
         }
     }
     /**
-     * @author Alain van Rijn
+     *
      *
      * given a differential equation, an array for the dependent and for the  independent variable, the last value of
      * the array for the dependent variable is returned
@@ -80,19 +80,19 @@ public class RungeKutta {
     }
 
     public static void main(String[] args) {
-        double dt = 0.10; // step size
-        double[] t_arr = new double[101]; // array that will contain t values
-        double[] y_arr = new double[101]; // array that will contain y values
+        double dt = 0.05; // step size
+        double[] t_arr = new double[201]; // array that will contain t values
+        double[] y_arr = new double[201]; // array that will contain y values
         y_arr[0] = 1.0; // initial condition
 
 
-        System.out.println(nextDependentVarRunge((t, y) -> t * sqrt(y), t_arr, y_arr, dt));
-//        runge((t, y) -> t * sqrt(y), t_arr, y_arr, dt);
-//
-//        for (int i = 0; i < t_arr.length; i++)
-//            if (i % 10 == 0)
-//                System.out.printf("y(%.1f) = %.8f Error: %.6f%n",
-//                        t_arr[i], y_arr[i],
-//                        calc_err(t_arr[i], y_arr[i]));
+//        System.out.println(nextDependentVarRunge((t, y) -> t * sqrt(y), t_arr, y_arr, dt));
+        runge((t, y) -> t * sqrt(y), t_arr, y_arr, dt);
+
+        for (int i = 0; i < t_arr.length; i++)
+            if (i % 10 == 0)
+                System.out.printf("y(%.1f) = %.8f Error: %.6f%n",
+                        t_arr[i], y_arr[i],
+                        calc_err(t_arr[i], y_arr[i]));
     }
 }
