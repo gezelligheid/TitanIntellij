@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6dc9f633-455e-4d2d-b22a-486cde6813bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/testing/IntegratorRKNTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IntegratorRKN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IntegratorRKN.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/src/SecondDerivative.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="104" lean-forward="true" selection-start-line="1" selection-start-column="104" selection-end-line="1" selection-end-column="104" />
+              <caret line="1" column="104" selection-start-line="1" selection-start-column="104" selection-end-line="1" selection-end-column="104" />
             </state>
           </provider>
         </entry>
@@ -65,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IntegratorRKN.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="663">
@@ -83,6 +83,15 @@
                 <element signature="e#1648#1649#0" expanded="true" />
                 <element signature="e#1675#1676#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/testing/IntegratorRKNTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -139,6 +148,7 @@
         <option value="$PROJECT_DIR$/src/SecondDerivative.java" />
         <option value="$PROJECT_DIR$/src/FlyingBall.java" />
         <option value="$PROJECT_DIR$/src/IntegratorRKN.java" />
+        <option value="$PROJECT_DIR$/testing/IntegratorRKNTest.java" />
       </list>
     </option>
   </component>
@@ -170,6 +180,11 @@
               <item name="TitanIntellij" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TitanIntellij" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TitanIntellij" type="462c0819:PsiDirectoryNode" />
+              <item name="testing" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -179,6 +194,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -205,7 +224,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RungeKutta">
+  <component name="RunManager" selected="JUnit.IntegratorRKNTest">
     <configuration name="JavaFXApplication3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JavaFXApplication3" />
       <module name="TitanIntellij" />
@@ -220,8 +239,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IntegratorRKNTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TitanIntellij" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="IntegratorRKNTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IntegratorRKNTest" />
         <item itemvalue="Application.RungeKutta" />
         <item itemvalue="Application.JavaFXApplication3" />
       </list>
@@ -244,7 +273,7 @@
       <workItem from="1555422591186" duration="1690000" />
       <workItem from="1555666190635" duration="2021000" />
       <workItem from="1555684746244" duration="1867000" />
-      <workItem from="1555767135483" duration="3649000" />
+      <workItem from="1555767135483" duration="5141000" />
     </task>
     <task id="LOCAL-00001" summary="made a non-void method for Runge-Kutta">
       <created>1555235346673</created>
@@ -260,17 +289,24 @@
       <option name="project" value="LOCAL" />
       <updated>1555769563568</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="completed second order differential equation solver">
+      <created>1555770833599</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555770833599</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15712000" />
+    <option name="totallyTimeSpent" value="17204000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1218" height="1202" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12931034" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12931034" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -290,7 +326,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.3286648" />
+      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.3286648" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.3297561" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -309,7 +345,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="made a non-void method for Runge-Kutta" />
     <MESSAGE value="set-up of solver for second order differential equations" />
-    <option name="LAST_COMMIT_MESSAGE" value="set-up of solver for second order differential equations" />
+    <MESSAGE value="completed second order differential equation solver" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed second order differential equation solver" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Phys.java" />
@@ -356,7 +393,7 @@
     <entry file="file://$PROJECT_DIR$/src/SecondDerivative.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="104" lean-forward="true" selection-start-line="1" selection-start-column="104" selection-end-line="1" selection-end-column="104" />
+          <caret line="1" column="104" selection-start-line="1" selection-start-column="104" selection-end-line="1" selection-end-column="104" />
         </state>
       </provider>
     </entry>
@@ -394,6 +431,13 @@
             <element signature="e#1648#1649#0" expanded="true" />
             <element signature="e#1675#1676#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/IntegratorRKNTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
