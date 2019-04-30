@@ -6,7 +6,7 @@ public class IntegratorRKNTest {
     @Test
     public void test(){
         FlyingBall ball = new FlyingBall();
-        SecondDerivative acceleration = (SecondDerivative) ball;
+        SecondDerivative acceleration = ball;
 
         double t0 = 0;
         double tmax = 10;
