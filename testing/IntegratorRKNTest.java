@@ -2,6 +2,7 @@ import org.junit.jupiter.api.Test;
 
 public class IntegratorRKNTest {
 
+    // covers a flying ball
     @Test
     public void test(){
         FlyingBall ball = new FlyingBall();
