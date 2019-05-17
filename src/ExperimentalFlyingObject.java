@@ -64,32 +64,32 @@ public class ExperimentalFlyingObject implements SecondDerivative {
         final double gravAccelSea = 9.80665; // m/s^2
 
         // represents different atmospheric layers
-        if (distanceFromSeaInKM > 71) {
+        if (distanceFromSeaInKM >= 71) {
             baseHeight = 71;
             baseDensity = 0.000064;
             standardTemperature = 214.65;
             temperatureLapseRate = -0.002;
-        } else if (distanceFromSeaInKM > 51) {
+        } else if (distanceFromSeaInKM >= 51) {
             baseHeight = 51;
             baseDensity = 0.00086;
             standardTemperature = 270.65;
             temperatureLapseRate = -0.0028;
-        } else if (distanceFromSeaInKM > 47) {
+        } else if (distanceFromSeaInKM >= 47) {
             baseHeight = 47;
             baseDensity = 0.00143;
             standardTemperature = 270.65;
             temperatureLapseRate = 0;
-        } else if (distanceFromSeaInKM > 32) {
+        } else if (distanceFromSeaInKM >= 32) {
             baseHeight = 32;
             baseDensity = 0.01322;
             standardTemperature = 228.65;
             temperatureLapseRate = 0.0028;
-        } else if (distanceFromSeaInKM > 20) {
+        } else if (distanceFromSeaInKM >= 20) {
             baseHeight = 20;
             baseDensity = 0.08803;
             standardTemperature = 216.65;
             temperatureLapseRate = 0.001;
-        } else if (distanceFromSeaInKM > 11) {
+        } else if (distanceFromSeaInKM >= 11) {
             baseHeight = 11;
             baseDensity = 0.36391;
             standardTemperature = 216.65;
@@ -120,5 +120,9 @@ public class ExperimentalFlyingObject implements SecondDerivative {
         } catch (ArithmeticException e) {
             e.printStackTrace();
         }
+    }
+
+    public double getAirDensity() {
+        return airDensity;
     }
 }
