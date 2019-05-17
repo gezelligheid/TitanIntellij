@@ -12,7 +12,7 @@ public class IntegratorRKN {
      * @param d2y0             some initial second derivative value
      * @param dy0              some initial first derivative value
      * @param h                the step size
-     * @param secondDerivative the object that does the secondderivative calculation work for the integration
+     * @param secondDerivative the object that does the second derivative calculation work for the integration
      * @param y0               initial dependent variable value
      * @param t0               initial independent variable value such as time
      */
