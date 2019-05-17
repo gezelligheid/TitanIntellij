@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6dc9f633-455e-4d2d-b22a-486cde6813bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/testing/ExperimentalObjectTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ExperimentalFlyingObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExperimentalFlyingObject.java" afterDir="false" />
     </list>
@@ -23,13 +22,13 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.1">
+    <splitter split-orientation="horizontal" split-proportion="0.116366364">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Display.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="543">
+                <state relative-caret-position="2040">
                   <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
                 </state>
               </provider>
@@ -47,7 +46,7 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.46828046">
+        <splitter split-orientation="horizontal" split-proportion="0.19031435">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file pinned="false" current-in-tab="false">
@@ -71,8 +70,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/testing/ExperimentalObjectTest.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="323">
-                      <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+                    <state relative-caret-position="391">
+                      <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
                       <folding>
                         <element signature="imports" expanded="true" />
                         <element signature="e#306#307#0" expanded="true" />
@@ -125,8 +124,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/ExperimentalFlyingObject.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="29">
-                      <caret line="93" column="33" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="33" />
+                    <state relative-caret-position="323">
+                      <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
                       <folding>
                         <element signature="e#4999#5000#0" expanded="true" />
                         <element signature="e#5032#5033#0" expanded="true" />
@@ -178,8 +177,8 @@
         <option value="$PROJECT_DIR$/src/SecondDerivative.java" />
         <option value="$PROJECT_DIR$/testing/IntegratorRKNTest.java" />
         <option value="$PROJECT_DIR$/src/IntegratorRKN.java" />
-        <option value="$PROJECT_DIR$/src/ExperimentalFlyingObject.java" />
         <option value="$PROJECT_DIR$/testing/ExperimentalObjectTest.java" />
+        <option value="$PROJECT_DIR$/src/ExperimentalFlyingObject.java" />
       </list>
     </option>
   </component>
@@ -334,7 +333,7 @@
       <workItem from="1557941559378" duration="2495000" />
       <workItem from="1558076904726" duration="7700000" />
       <workItem from="1558102902596" duration="1329000" />
-      <workItem from="1558104428523" duration="4325000" />
+      <workItem from="1558104428523" duration="4724000" />
     </task>
     <task id="LOCAL-00001" summary="made a non-void method for Runge-Kutta">
       <created>1555235346673</created>
@@ -399,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558108038693</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="tested air density, added test suite">
+      <created>1558108908478</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1558108908478</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -421,15 +427,21 @@
     <history-entry file="IntegratorRKNTest - 2019.04.30 at 17h 01m 28s.xml">
       <configuration name="IntegratorRKNTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ExperimentalObjectTest - 2019.05.17 at 17h 59m 45s.xml">
+      <configuration name="ExperimentalObjectTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExperimentalObjectTest - 2019.05.17 at 18h 00m 55s.xml">
+      <configuration name="ExperimentalObjectTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43757000" />
+    <option name="totallyTimeSpent" value="44156000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="599" y="0" width="1602" height="1202" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1373057" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1373057" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -439,7 +451,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.86372095" weight="0.1624884" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8626943" visible="true" weight="0.16246499" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -448,8 +460,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49813953" weight="0.14298978" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5012953" side_tool="true" visible="true" weight="0.3277311" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49870467" visible="true" weight="0.3277311" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.1373057" side_tool="true" visible="true" weight="0.16246499" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49870467" weight="0.3277311" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.3297561" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -475,7 +487,8 @@
     <MESSAGE value="start of Experimental flying object" />
     <MESSAGE value="completed setter for gravitational acceleration" />
     <MESSAGE value="experimental flying object done, added setter to enhance integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="experimental flying object done, added setter to enhance integration" />
+    <MESSAGE value="tested air density, added test suite" />
+    <option name="LAST_COMMIT_MESSAGE" value="tested air density, added test suite" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Phys.java" />
@@ -552,7 +565,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Display.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
+        <state relative-caret-position="2040">
           <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
         </state>
       </provider>
@@ -589,25 +602,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExperimentalFlyingObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="93" column="33" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="33" />
-          <folding>
-            <element signature="e#4999#5000#0" expanded="true" />
-            <element signature="e#5032#5033#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testing/ExperimentalObjectTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#306#307#0" expanded="true" />
             <element signature="e#328#329#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ExperimentalFlyingObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+          <folding>
+            <element signature="e#4999#5000#0" expanded="true" />
+            <element signature="e#5032#5033#0" expanded="true" />
           </folding>
         </state>
       </provider>

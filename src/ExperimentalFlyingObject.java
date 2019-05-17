@@ -17,6 +17,7 @@ public class ExperimentalFlyingObject implements SecondDerivative {
         // gravitational acceleration and air density change with altitude/position see code below
         this.gravAccel = 9.81;
         this.airDensity = 1.29;
+        //TODO determine the rate of burning etc
         this.fuelMass = initialFuel; // initial filling
 
 
