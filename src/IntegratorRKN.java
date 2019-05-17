@@ -50,6 +50,25 @@ public class IntegratorRKN {
         d2y0 = d2y1;
     }
 
+    /**
+     * this setter is useful whenever a there are changes to the environment of a moving object that change the
+     * physics of it's environment
+     *
+     * @param secondDerivative the new second derivative to work with.
+     * */
+    public void setSecondDerivative(SecondDerivative secondDerivative) {
+        this.secondDerivative = secondDerivative;
+    }
+
+    /**
+     * could be used to change velocity based on externalities such as use of a thruster
+     *
+     * @param dy0 The new (initial) velocity
+     * */
+    public void setDy0(double dy0) {
+        this.dy0 = dy0;
+    }
+
     public SecondDerivative getSecondDerivative() {
         return secondDerivative;
     }
