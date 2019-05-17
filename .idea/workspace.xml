@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6dc9f633-455e-4d2d-b22a-486cde6813bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ExperimentalFlyingObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IntegratorRKN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IntegratorRKN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExperimentalFlyingObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExperimentalFlyingObject.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,7 +49,7 @@
         <splitter split-orientation="horizontal" split-proportion="0.40940526">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="true">
+              <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/FlyingBall.java">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="34">
@@ -68,11 +67,11 @@
                   </provider>
                 </entry>
               </file>
-              <file pinned="false" current-in-tab="false">
+              <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/IntegratorRKN.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="238">
-                      <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
+                    <state relative-caret-position="305">
+                      <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
                     </state>
                   </provider>
                 </entry>
@@ -93,8 +92,12 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/ExperimentalFlyingObject.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="289">
-                      <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+                    <state relative-caret-position="272">
+                      <caret line="37" column="78" selection-start-line="37" selection-start-column="78" selection-end-line="37" selection-end-column="78" />
+                      <folding>
+                        <element signature="e#1657#1658#0" expanded="true" />
+                        <element signature="e#1701#1702#0" expanded="true" />
+                      </folding>
                     </state>
                   </provider>
                 </entry>
@@ -285,7 +288,7 @@
       <workItem from="1557918482211" duration="339000" />
       <workItem from="1557927122240" duration="16000" />
       <workItem from="1557941559378" duration="2495000" />
-      <workItem from="1558076904726" duration="5475000" />
+      <workItem from="1558076904726" duration="7204000" />
     </task>
     <task id="LOCAL-00001" summary="made a non-void method for Runge-Kutta">
       <created>1555235346673</created>
@@ -329,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557672724348</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="start of Experimental flying object">
+      <created>1558097713474</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1558097713475</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -353,13 +363,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35878000" />
+    <option name="totallyTimeSpent" value="37607000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2208" height="1208" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09581395" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09581395" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -378,8 +388,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49813953" weight="0.14298978" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.13627908" side_tool="true" visible="true" weight="0.1624884" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49953488" weight="0.3277623" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50093025" side_tool="true" visible="true" weight="0.3277623" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" sideWeight="0.49906978" visible="true" weight="0.3277623" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.3297561" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -402,7 +412,8 @@
     <MESSAGE value="added test class for trying 2nd order DE solver - test successful" />
     <MESSAGE value="testing folder" />
     <MESSAGE value="merged second-order ode solver to main branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="merged second-order ode solver to main branch" />
+    <MESSAGE value="start of Experimental flying object" />
+    <option name="LAST_COMMIT_MESSAGE" value="start of Experimental flying object" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Phys.java" />
@@ -477,13 +488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IntegratorRKN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SecondDerivative.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -498,10 +502,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/IntegratorRKN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ExperimentalFlyingObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+        <state relative-caret-position="272">
+          <caret line="37" column="78" selection-start-line="37" selection-start-column="78" selection-end-line="37" selection-end-column="78" />
+          <folding>
+            <element signature="e#1657#1658#0" expanded="true" />
+            <element signature="e#1701#1702#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

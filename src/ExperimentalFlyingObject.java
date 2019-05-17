@@ -34,6 +34,20 @@ public class ExperimentalFlyingObject implements SecondDerivative {
     }
 
     /**
+     * sets the gravitational acceleration the object is dealing with by
+     * formula for adjusting the gravitational acceleration near planet earth.
+     * 6400km is the distance between the core of the earth and sea level.
+     *
+     * @param distanceFromSeaInKM distance from earths surface at sea level*/
+    public void setGravAccel(double distanceFromSeaInKM) {
+        this.gravAccel = 9.81 / Math.pow((6400 + distanceFromSeaInKM)/6400, 2);
+    }
+
+    public void setAirDensity(double airDensity) {
+        this.airDensity = airDensity;
+    }
+
+    /**
      * access te fuel tank of the flying object
      * @param kgsToBurn The amount of fuel to "burn".
      * */
