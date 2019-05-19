@@ -10,10 +10,11 @@ public class ExperimentalFlyingObject implements SecondDerivative {
 
     public ExperimentalFlyingObject(double initialFuel) {
         //TODO properly set object dimensions
-        this.objectDiameter = 0.1;
-        this.objectDensity = 600;
+        //
+        this.objectDiameter = 10.3; //soyuz 10.3 meters
+        this.objectDensity = 12; // kg/m^3 (capsule/payload only)
         //TODO properly set drag coefficient
-        this.dragCoefficient = 0.1;
+        this.dragCoefficient = 0.1; // approximation for well streamlined body
         // gravitational acceleration and air density change with altitude/position see code below
         this.gravAccel = 9.81;
         this.airDensity = 1.29;
@@ -125,5 +126,9 @@ public class ExperimentalFlyingObject implements SecondDerivative {
 
     public double getAirDensity() {
         return airDensity;
+    }
+
+    public double getCapsuleMass(){
+        return objectDensity *(Math.PI * Math.pow(objectDiameter, 3) / 6);
     }
 }

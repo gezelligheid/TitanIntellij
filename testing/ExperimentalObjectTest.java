@@ -9,7 +9,7 @@ public class ExperimentalObjectTest {
       methods are tested against some expected return values
       */
 
-    ExperimentalFlyingObject myObject = new ExperimentalFlyingObject(100);
+    ExperimentalFlyingObject myObject = new ExperimentalFlyingObject(300000);
 
     @Test
     public void testSealevel() {
@@ -19,5 +19,9 @@ public class ExperimentalObjectTest {
     public void test11km(){
         myObject.setAirDensity(11);
         assertEquals(0.36391, myObject.getAirDensity());
+    }
+    @Test
+    public void testMass(){
+        System.out.println("capsule mass: " + myObject.getCapsuleMass() + "kg" );
     }
 }

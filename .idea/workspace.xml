@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6dc9f633-455e-4d2d-b22a-486cde6813bf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Display.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ExperimentalFlyingObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExperimentalFlyingObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/ExperimentalObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/testing/ExperimentalObjectTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,14 +24,14 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.116366364">
+    <splitter split-orientation="horizontal" split-proportion="0.39173126">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Display.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2040">
-                  <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+                <state relative-caret-position="187">
+                  <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
                 </state>
               </provider>
             </entry>
@@ -37,7 +39,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/LaunchPad.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1071">
+                <state relative-caret-position="926">
                   <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
                 </state>
               </provider>
@@ -46,7 +48,7 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.19031435">
+        <splitter split-orientation="horizontal" split-proportion="0.36934024">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file pinned="false" current-in-tab="false">
@@ -62,7 +64,7 @@
                 <entry file="file://$PROJECT_DIR$/testing/IntegratorRKNTest.java">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="476">
-                      <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+                      <caret line="28" selection-start-line="28" selection-end-line="28" />
                     </state>
                   </provider>
                 </entry>
@@ -70,12 +72,12 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/testing/ExperimentalObjectTest.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="391">
-                      <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+                    <state relative-caret-position="340">
+                      <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
                       <folding>
                         <element signature="imports" expanded="true" />
-                        <element signature="e#306#307#0" expanded="true" />
-                        <element signature="e#328#329#0" expanded="true" />
+                        <element signature="e#583#584#0" expanded="true" />
+                        <element signature="e#629#630#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -84,25 +86,11 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/IntegratorRKN.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="1122">
+                    <state relative-caret-position="1088">
                       <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
                       <folding>
-                        <element signature="e#2046#2047#0" expanded="true" />
-                        <element signature="e#2102#2103#0" expanded="true" />
-                        <element signature="e#2395#2396#0" expanded="true" />
-                        <element signature="e#2425#2426#0" expanded="true" />
-                        <element signature="e#2478#2479#0" expanded="true" />
-                        <element signature="e#2517#2518#0" expanded="true" />
-                        <element signature="e#2546#2547#0" expanded="true" />
-                        <element signature="e#2571#2572#0" expanded="true" />
-                        <element signature="e#2600#2601#0" expanded="true" />
                         <element signature="e#2625#2626#0" expanded="true" />
-                        <element signature="e#2655#2656#0" expanded="true" />
-                        <element signature="e#2681#2682#0" expanded="true" />
-                        <element signature="e#2709#2710#0" expanded="true" />
-                        <element signature="e#2733#2734#0" expanded="true" />
-                        <element signature="e#2764#2765#0" expanded="true" />
-                        <element signature="e#2791#2792#0" expanded="true" />
+                        <element signature="e#2664#2665#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -124,11 +112,11 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/ExperimentalFlyingObject.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="323">
-                      <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+                    <state relative-caret-position="238">
+                      <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
                       <folding>
-                        <element signature="e#4999#5000#0" expanded="true" />
-                        <element signature="e#5032#5033#0" expanded="true" />
+                        <element signature="e#5235#5236#0" expanded="true" />
+                        <element signature="e#5316#5317#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -179,13 +167,14 @@
         <option value="$PROJECT_DIR$/src/IntegratorRKN.java" />
         <option value="$PROJECT_DIR$/testing/ExperimentalObjectTest.java" />
         <option value="$PROJECT_DIR$/src/ExperimentalFlyingObject.java" />
+        <option value="$PROJECT_DIR$/src/Display.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1048" />
-    <option name="width" value="2804" />
-    <option name="height" value="2104" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-4" />
+    <option name="width" value="3030" />
+    <option name="height" value="2106" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -193,6 +182,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -220,7 +210,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,7 +243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ExperimentalObjectTest">
+  <component name="RunManager" selected="Application.LaunchPad">
     <configuration name="JavaFXApplication3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JavaFXApplication3" />
       <module name="TitanIntellij" />
@@ -296,8 +285,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ExperimentalObjectTest" />
         <item itemvalue="Application.LaunchPad" />
+        <item itemvalue="JUnit.ExperimentalObjectTest" />
         <item itemvalue="JUnit.IntegratorRKNTest" />
         <item itemvalue="Application.RungeKutta" />
         <item itemvalue="Application.JavaFXApplication3" />
@@ -333,7 +322,8 @@
       <workItem from="1557941559378" duration="2495000" />
       <workItem from="1558076904726" duration="7700000" />
       <workItem from="1558102902596" duration="1329000" />
-      <workItem from="1558104428523" duration="4724000" />
+      <workItem from="1558104428523" duration="5539000" />
+      <workItem from="1558272290388" duration="6102000" />
     </task>
     <task id="LOCAL-00001" summary="made a non-void method for Runge-Kutta">
       <created>1555235346673</created>
@@ -405,13 +395,17 @@
       <option name="project" value="LOCAL" />
       <updated>1558108908478</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added todo and comment">
+      <created>1558109215601</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1558109215601</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IntegratorRKNTest - 2019.04.20 at 17h 19m 56s.xml">
-      <configuration name="IntegratorRKNTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="IntegratorRKNTest - 2019.04.23 at 14h 54m 40s.xml">
       <configuration name="IntegratorRKNTest" configurationId="JUnit" />
     </history-entry>
@@ -433,15 +427,23 @@
     <history-entry file="ExperimentalObjectTest - 2019.05.17 at 18h 00m 55s.xml">
       <configuration name="ExperimentalObjectTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ExperimentalObjectTest - 2019.05.19 at 16h 48m 46s.xml">
+      <configuration name="ExperimentalObjectTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExperimentalObjectTest - 2019.05.19 at 16h 49m 19s.xml">
+      <configuration name="ExperimentalObjectTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExperimentalObjectTest - 2019.05.19 at 16h 49m 32s.xml">
+      <configuration name="ExperimentalObjectTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44156000" />
+    <option name="totallyTimeSpent" value="51073000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="599" y="0" width="1602" height="1202" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="2208" height="1208" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1373057" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -451,7 +453,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8626943" visible="true" weight="0.16246499" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.86186045" visible="true" weight="0.1615599" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -460,7 +462,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49813953" weight="0.14298978" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.1373057" side_tool="true" visible="true" weight="0.16246499" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.13813953" side_tool="true" visible="true" weight="0.1615599" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49870467" weight="0.3277311" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.3297561" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -488,7 +490,8 @@
     <MESSAGE value="completed setter for gravitational acceleration" />
     <MESSAGE value="experimental flying object done, added setter to enhance integration" />
     <MESSAGE value="tested air density, added test suite" />
-    <option name="LAST_COMMIT_MESSAGE" value="tested air density, added test suite" />
+    <MESSAGE value="added todo and comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="added todo and comment" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Phys.java" />
@@ -542,17 +545,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LaunchPad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FlyingBall.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/IntegratorRKNTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IntegratorRKN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
+          <folding>
+            <element signature="e#2625#2626#0" expanded="true" />
+            <element signature="e#2664#2665#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -563,65 +577,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IntegratorRKN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
-          <folding>
-            <element signature="e#2046#2047#0" expanded="true" />
-            <element signature="e#2102#2103#0" expanded="true" />
-            <element signature="e#2395#2396#0" expanded="true" />
-            <element signature="e#2425#2426#0" expanded="true" />
-            <element signature="e#2478#2479#0" expanded="true" />
-            <element signature="e#2517#2518#0" expanded="true" />
-            <element signature="e#2546#2547#0" expanded="true" />
-            <element signature="e#2571#2572#0" expanded="true" />
-            <element signature="e#2600#2601#0" expanded="true" />
-            <element signature="e#2625#2626#0" expanded="true" />
-            <element signature="e#2655#2656#0" expanded="true" />
-            <element signature="e#2681#2682#0" expanded="true" />
-            <element signature="e#2709#2710#0" expanded="true" />
-            <element signature="e#2733#2734#0" expanded="true" />
-            <element signature="e#2764#2765#0" expanded="true" />
-            <element signature="e#2791#2792#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testing/IntegratorRKNTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testing/ExperimentalObjectTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="340">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ExperimentalFlyingObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+        <state relative-caret-position="238">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
           <folding>
-            <element signature="e#4999#5000#0" expanded="true" />
-            <element signature="e#5032#5033#0" expanded="true" />
+            <element signature="e#5235#5236#0" expanded="true" />
+            <element signature="e#5316#5317#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LaunchPad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="926">
+          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
         </state>
       </provider>
     </entry>
