@@ -4,6 +4,7 @@ import java.util.Hashtable;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
+
 public class LaunchPad {
 
     private static JFrame frame;
@@ -40,7 +41,11 @@ public class LaunchPad {
             public void stateChanged(ChangeEvent e) {
 
                 //calls the method from Disp to get the new Thrust value
-                disp.addThrust( ((JSlider)e.getSource()).getValue());
+                if(!disp.isAutopilot()){disp.addThrust( ((JSlider)e.getSource()).getValue());}
+                else{
+                    slider.setValue(disp.getAutoPilotPower());
+                    disp.addThrust( ((JSlider)e.getSource()).getValue());
+                }
             }
         });
 
@@ -64,7 +69,11 @@ public class LaunchPad {
             public void stateChanged(ChangeEvent e) {
 
                 //calls the method to change the number of engines being used
+                if(!disp.isAutopilot()){disp.changeNumberOfEngines( ((JSlider)e.getSource()).getValue());}
+            else{
+                slider2.setValue(disp.getAutoPilotEngine());
                 disp.changeNumberOfEngines( ((JSlider)e.getSource()).getValue());
+                }
             }
         });
 

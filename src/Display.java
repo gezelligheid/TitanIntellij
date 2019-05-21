@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.io.*;
+import javax.imageio.ImageIO;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.awt.Graphics;
@@ -8,22 +10,31 @@ import java.awt.Color;
 
 public class Display extends JComponent {
 
-    double altitude = 0;
+    double altitude = 1000;
     double massRocket = 538; //in tones
 
+    private Image backgroundImage;
+
     double acceleration=0;
-    double Gravity = -0.892857; // Newtons per tons
+    //double Gravity = -0.892857; // Newtons per tons
     double Thruster = 0; // Newtons per tons
 
     private int enginesNumber = 0;
+
+    boolean cruise = false;
+    int enginePower;
+    int setNbEngines;
 
 
     static Timer timer;
     public int countTimer;
     boolean chronoTimer = false;
 
+    private final double MASSEARTH = 5.972*10E24;
 
     private int step = 10;    //step size for each event
+
+
 
     Graphics g;
 
@@ -45,7 +56,9 @@ public class Display extends JComponent {
                 repaint();
             } }, step, step);
 
-    paint(g);
+
+
+        paint(g);
 
     }
 
@@ -79,6 +92,11 @@ public class Display extends JComponent {
         /*
         @   Computes the forces at each step-size (step)
          */
+        if(altitude<450){cruise=true;}  //activates autopilot
+        if(cruise){autopilot();}
+
+        acceleration = 0; //resets the acceleration
+
 
         acceleration = 0; //resets the acceleration
 
@@ -90,6 +108,8 @@ public class Display extends JComponent {
 
         //a=F/m, so we devide the sum of the forces by the mass of the rocket
         acceleration = acceleration / massRocket;
+
+
 
         //prints on the terminal the informations
         System.out.println("Force = " + acceleration + " | " + (Thruster*enginesNumber) + " Engines: " + enginesNumber + " Altitude: " + altitude);
@@ -123,9 +143,83 @@ public class Display extends JComponent {
 
     }
 
+    //this will be used later to update the sliders
+    public void activateCruise(){
+        cruise = true;
+    }
+    public void desactivateCruise(){
+        cruise = false;
+    }
+
+    public boolean isAutopilot(){
+        return cruise;
+    }
+
+    //returns the new data but will be used for later
+    public int getAutoPilotPower(){return enginePower;}
+    public int getAutoPilotEngine(){return setNbEngines;}
+
+    public void autopilot(){
+        if(altitude<400 && altitude>300){
+            enginePower = 40;
+            setNbEngines = 5;
+            Thruster = enginePower;
+            enginesNumber = setNbEngines;
+        }
+        else if(altitude<300 && altitude>200){
+            enginePower = 60;
+            setNbEngines = 5;
+            Thruster = enginePower;
+            enginesNumber = setNbEngines;
+        }
+        else if(altitude<200 && altitude>100){
+            enginePower = 60;
+            setNbEngines = 6;
+            Thruster = enginePower;
+            enginesNumber = setNbEngines;
+        }
+        else if(altitude<100 && altitude>50){
+            enginePower = 65;
+            setNbEngines = 6;
+            Thruster = enginePower;
+            enginesNumber = setNbEngines;
+        }
+        else if(altitude<50 && altitude>5){
+            enginePower = 72;
+            setNbEngines = 6;
+            Thruster = enginePower;
+            enginesNumber = setNbEngines;
+        }
+        else if(altitude<5 && altitude>1){
+            enginePower = 80;
+            setNbEngines = 6;
+            Thruster = enginePower;
+            enginesNumber = setNbEngines;
+        }
+        else if(altitude<1){
+            enginePower = 0;
+            setNbEngines = 0;
+            Thruster = enginePower;
+            enginesNumber = setNbEngines;
+            cruise = false;
+        }
+    }
+
+
 
 
     public void paintComponent(Graphics g){
+
+        Graphics2D g2 = (Graphics2D) g;
+
+        try {   //sets the background picture
+            backgroundImage = ImageIO.read(new File("C:\\Users\\lucas\\Desktop\\DKE\\LaunchPad\\src\\titan.png"));
+            g2.drawImage(backgroundImage, 0, 0, null);
+        } catch(IOException e){
+            throw new RuntimeException(e);
+        }
+
+
 
         /*
         @   Makes the GUI
@@ -140,37 +234,49 @@ public class Display extends JComponent {
         @   Adding clouds or something could be could, maybe drawing the wind from the simulator
          */
 
-        g.setColor(new Color(0, 200, 250));      //SKY
-        g.fillRect(0, 0, 2000, 1500 );
+        GradientPaint gp1 = new GradientPaint(50, 1, Color.blue, 20, 20, Color.orange, true);
+        GradientPaint gp2 = new GradientPaint(100, 100, Color.black, 5, 5, Color.lightGray, true);
+        GradientPaint gp3 = new GradientPaint(45, 45, Color.yellow, 70, 70, Color.orange, true);
+        GradientPaint gp4 = new GradientPaint(5, 5, Color.darkGray, 20, 20, Color.red, true);
 
-        g.setColor(new Color(200, 250, 100));        //GROUND
-        g.fillRect(0, 700 + (int) altitude, 2000, 1000 );
 
-        g.setColor(Color.LIGHT_GRAY);   //BASE
-        g.fillRect(700, 700 + (int) altitude, 100, 40);
+        g2.setPaint(gp3);
+        g2.fillRect(0, 700 + (int) altitude, 2000, 1000 );
 
-        g.setColor(new Color(40, 120, 0));
+       // g.setColor(Color.LIGHT_GRAY);   //BASE
+        g2.setPaint(gp2);
+        g2.fillRect(700, 700 + (int) altitude, 100, 200);
+
+        if(altitude==0){
+            g2.setPaint(Color.RED);
+            g2.drawString("TOUCHDOWN", 709, 715);
+        }
+
+        g2.setPaint(new Color(40, 120, 0));
         g.fill3DRect(740, 550, 20, 150, true);
 
-        int[] xCone = {
+        int[] xCone = { //coords for the cone of the rocket
                 740, 760, 750
         };
         int[] yCone = {
                 550, 550, 500
         };
-        g.setColor(Color.RED);
-        g.fillPolygon(xCone, yCone, 3);
 
-        g.setColor(Color.WHITE);
-        g.setFont(new Font("TimesRoman", Font.PLAIN, 40));
+        g2.setPaint(Color.RED);
+        g2.fillPolygon(xCone, yCone, 3);
+
+        g2.setPaint(Color.WHITE);
+        g2.setFont(new Font("TimesRoman", Font.PLAIN, 40));
 
         //gives indications about the Thrust and the altitude
-        g.drawString("Thrust: " + Thruster*enginesNumber, 1000, 800);
-        g.drawString("Altitude: " + altitude, 1200, 100);
+        g2.drawString("Thrust: " + Thruster*enginesNumber, 1000, 800);
+        g2.drawString("Altitude: " + altitude, 1200, 100);
+        if(cruise){g2.drawString("Autopilot ON", 1200, 200);}
+
+
 
         //if(onBoardComputer()){repaint();} //not useful anymore
     }
-
 
     class west extends JPanel {
 
@@ -204,6 +310,8 @@ public class Display extends JComponent {
 
         }
     }
+
+
 
 
 
