@@ -10,8 +10,20 @@ import java.awt.Color;
 
 public class Display extends JComponent {
 
-    double altitude = 1000;
-    double massRocket = 538; //in tones
+    double x0,y0,x1,y1;
+    double angle;
+
+
+    double altitude = 500;
+    double speed = 0;
+    double longitude = Math.exp( (altitude)/377 )-1.27562001;
+    double massRocket = 33.8; //in tones
+    double fuelMass = 27;
+    double startFuelMass = fuelMass;
+    double endFuelMass = 24;
+    double drag = 0;    //The dynamic pressure on the vehicle
+
+    double titanGravity = 0.138;
 
     private Image backgroundImage;
 
@@ -32,7 +44,7 @@ public class Display extends JComponent {
 
     private final double MASSEARTH = 5.972*10E24;
 
-    private int step = 10;    //step size for each event
+    private int step = 1;    //step size for each event
 
 
 
@@ -77,11 +89,31 @@ public class Display extends JComponent {
 
             updateStep();
             if(altitude + acceleration >=0) {
-                altitude += acceleration;
+
+                x0 = longitude;
+                y0 = altitude;
+
+
+                altitude += speed;
+                longitude = Math.exp( (altitude)/377 );//-1.27562001;
+
+                x1 = longitude;
+                y1 = altitude;
+
+               // angle = y1/x1;
+                //System.out.println(angle);
+
+                angle = 180.0 / Math.PI * Math.atan2(x1 - x0, y0 - y1);
+               // System.out.println(angle);
+
+               // longitude = acceleration*Math.sin(1);
                 return true;
             }
             else{
                 altitude = 0;   //makes the last step to land
+                longitude = Math.exp( (altitude)/377 );//-1.27562001;
+                angle = 0;
+                drag = 0;
                 return true;
             }
 
@@ -92,7 +124,7 @@ public class Display extends JComponent {
         /*
         @   Computes the forces at each step-size (step)
          */
-        if(altitude<450){cruise=true;}  //activates autopilot
+        if(altitude<250){cruise=true;}  //activates autopilot
         if(cruise){autopilot();}
 
         acceleration = 0; //resets the acceleration
@@ -101,18 +133,30 @@ public class Display extends JComponent {
         acceleration = 0; //resets the acceleration
 
         //adds the gravity force (1kg = 1N.kg on earth, so just the mass)
-        acceleration += -massRocket;
+        acceleration += -(massRocket+fuelMass)*titanGravity;
+
+
 
         //adds the force of the thrusters
         acceleration = acceleration + (Thruster*enginesNumber);
 
-        //a=F/m, so we devide the sum of the forces by the mass of the rocket
-        acceleration = acceleration / massRocket;
+//a=F/m, so we devide the sum of the forces by the mass of the rocket
+        acceleration = acceleration / (massRocket*fuelMass);
+
+        speed = acceleration;
+     //   step += step;
+
+        drag = 2* (Math.pow(speed,2) / 2) * 71.2494;
+
+        if(speed>=0){drag = -drag;} //sets the drag to the Y-direction the rocket is going
+
 
 
 
         //prints on the terminal the informations
         System.out.println("Force = " + acceleration + " | " + (Thruster*enginesNumber) + " Engines: " + enginesNumber + " Altitude: " + altitude);
+
+
 
     }
 
@@ -160,39 +204,44 @@ public class Display extends JComponent {
     public int getAutoPilotEngine(){return setNbEngines;}
 
     public void autopilot(){
-        if(altitude<400 && altitude>300){
-            enginePower = 40;
-            setNbEngines = 5;
+        if(altitude<200 && altitude>150){
+            enginePower = 1;
+            setNbEngines = 1;
+            fuelMass = startFuelMass - 0.5;
             Thruster = enginePower;
             enginesNumber = setNbEngines;
         }
-        else if(altitude<300 && altitude>200){
-            enginePower = 60;
-            setNbEngines = 5;
-            Thruster = enginePower;
-            enginesNumber = setNbEngines;
-        }
-        else if(altitude<200 && altitude>100){
-            enginePower = 60;
-            setNbEngines = 6;
+        else if(altitude<150 && altitude>100){
+            enginePower = 2;
+            setNbEngines = 1;
+            fuelMass = startFuelMass - 1;
             Thruster = enginePower;
             enginesNumber = setNbEngines;
         }
         else if(altitude<100 && altitude>50){
-            enginePower = 65;
-            setNbEngines = 6;
+            enginePower = 3;
+            setNbEngines = 1;
+            fuelMass = startFuelMass - 1.5;
             Thruster = enginePower;
             enginesNumber = setNbEngines;
         }
-        else if(altitude<50 && altitude>5){
-            enginePower = 72;
-            setNbEngines = 6;
+        else if(altitude<50 && altitude>25){
+            enginePower = 4;
+            setNbEngines = 1;
+            fuelMass = startFuelMass - 2;
+            Thruster = enginePower;
+            enginesNumber = setNbEngines;
+        }
+        else if(altitude<25 && altitude>5){
+            enginePower = 5;
+            setNbEngines = 1;
+            fuelMass = endFuelMass;
             Thruster = enginePower;
             enginesNumber = setNbEngines;
         }
         else if(altitude<5 && altitude>1){
-            enginePower = 80;
-            setNbEngines = 6;
+            enginePower = 7;
+            setNbEngines = 1;
             Thruster = enginePower;
             enginesNumber = setNbEngines;
         }
@@ -245,15 +294,47 @@ public class Display extends JComponent {
 
        // g.setColor(Color.LIGHT_GRAY);   //BASE
         g2.setPaint(gp2);
-        g2.fillRect(700, 700 + (int) altitude, 100, 200);
+        g2.fillRect(700+(int)longitude, 700 + (int) altitude, 100, 200);
 
         if(altitude==0){
             g2.setPaint(Color.RED);
             g2.drawString("TOUCHDOWN", 709, 715);
         }
 
+      //  g2.setPaint(new Color(40, 120, 0));
+        //g.fill3DRect(740, 550, 20, 150, true);
+
+        angle = (angle/90)*(Math.PI/2);
+
+        double locX1 =  590+150;//*Math.cos(angle);
+        double locY1 =  590+150;//*Math.cos(angle);
+
+        int[] xRocket = { //coords of the rocket
+                760,
+                (int)locX1,
+
+                (int)locX1,
+
+
+                760,
+
+        };
+        int[] yRocket = {
+                700,
+                550+150,
+
+                550,
+
+
+                550,
+
+        };
+
         g2.setPaint(new Color(40, 120, 0));
-        g.fill3DRect(740, 550, 20, 150, true);
+        g2.fillPolygon(xRocket, yRocket, 4);
+
+
+
 
         int[] xCone = { //coords for the cone of the rocket
                 740, 760, 750
@@ -271,6 +352,10 @@ public class Display extends JComponent {
         //gives indications about the Thrust and the altitude
         g2.drawString("Thrust: " + Thruster*enginesNumber, 1000, 800);
         g2.drawString("Altitude: " + altitude, 1200, 100);
+        g2.drawString("Longitude: " + longitude, 1200, 150);
+        g2.drawString("Angle: " + angle, 1200, 250);
+        g2.drawString("Drag: " + drag, 1200, 300);
+        g2.drawString("Fuel Level: " + fuelMass, 1200, 350);
         if(cruise){g2.drawString("Autopilot ON", 1200, 200);}
 
 
