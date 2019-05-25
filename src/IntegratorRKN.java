@@ -12,7 +12,7 @@ public class IntegratorRKN {
      * @param d2y0             some initial second derivative value
      * @param dy0              some initial first derivative value
      * @param h                the step size
-     * @param secondDerivative the object that does the secondderivative calculation work for the integration
+     * @param secondDerivative the object that does the second derivative calculation work for the integration
      * @param y0               initial dependent variable value
      * @param t0               initial independent variable value such as time
      */
@@ -48,6 +48,25 @@ public class IntegratorRKN {
         y0 = y1;
         dy0 = dy1;
         d2y0 = d2y1;
+    }
+
+    /**
+     * this setter is useful whenever a there are changes to the environment of a moving object that change the
+     * physics of it's environment
+     *
+     * @param secondDerivative the new second derivative to work with.
+     * */
+    public void setSecondDerivative(SecondDerivative secondDerivative) {
+        this.secondDerivative = secondDerivative;
+    }
+
+    /**
+     * could be used to change velocity based on externalities such as use of a thruster
+     *
+     * @param dy0 The new (initial) velocity
+     * */
+    public void setDy0(double dy0) {
+        this.dy0 = dy0;
     }
 
     public SecondDerivative getSecondDerivative() {

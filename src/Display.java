@@ -30,6 +30,7 @@ public class Display extends JComponent {
     double acceleration=0;
     //double Gravity = -0.892857; // Newtons per tons
     double Thruster = 0; // Newtons per tons
+    final double thrusterMaxFuelConsumption = 326.9; // (merlin 1D vacuum) kg per second at full thrust
 
     private int enginesNumber = 0;
 
