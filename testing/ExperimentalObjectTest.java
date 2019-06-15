@@ -24,4 +24,10 @@ public class ExperimentalObjectTest {
     public void testMass(){
         System.out.println("capsule mass: " + myObject.getCapsuleMass() + "kg" );
     }
+
+    @Test
+    public void testgravity(){
+        myObject.setGravAccel(400);
+        System.out.println("gravitational force at 400km: " + myObject.getGravAccel());
+    }
 }

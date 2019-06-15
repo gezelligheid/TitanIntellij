@@ -1,11 +1,10 @@
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
-import java.io.*;
-import javax.imageio.ImageIO;
+import java.io.File;
+import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.awt.Graphics;
-import java.awt.Color;
 
 
 public class Display extends JComponent {

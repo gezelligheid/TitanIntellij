@@ -4,7 +4,7 @@
  */
 public class IntegratorRKN {
     private SecondDerivative secondDerivative;
-    private double t0, y0, dy0, h, d2y0; // (initial) conditions
+    private double t0, y0, dy0, h, d2y0; // (initial) conditions. mind the unit sizes
 
     /**
      * constructs an integrator for some some object that implements the SecondDerivative class

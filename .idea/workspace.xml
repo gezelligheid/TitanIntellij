@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6dc9f633-455e-4d2d-b22a-486cde6813bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AlternativeBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/AlternativeBodyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing/VectorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Display.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ExperimentalFlyingObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExperimentalFlyingObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IntegratorRKN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IntegratorRKN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testing/ExperimentalObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/testing/ExperimentalObjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/IntegratorRKNTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/testing/IntegratorRKNTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,18 +26,39 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="193" />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.39173126">
+    <splitter split-orientation="horizontal" split-proportion="0.3922853">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Display.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
+                <state relative-caret-position="850">
+                  <caret line="56" column="63" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="63" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#5006#5007#0" expanded="true" />
+                    <element signature="e#5035#5036#0" expanded="true" />
+                    <element signature="e#5072#5073#0" expanded="true" />
+                    <element signature="e#5102#5103#0" expanded="true" />
+                    <element signature="e#5137#5138#0" expanded="true" />
+                    <element signature="e#5166#5167#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Vector.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="349">
+                  <caret line="71" column="14" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -39,8 +66,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/LaunchPad.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="926">
-                  <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+                <state relative-caret-position="459">
+                  <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
@@ -48,83 +75,47 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.36934024">
-          <split-first>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/FlyingBall.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="34">
-                      <caret line="2" selection-start-line="2" selection-end-line="32" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/testing/IntegratorRKNTest.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="476">
-                      <caret line="28" selection-start-line="28" selection-end-line="28" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/testing/ExperimentalObjectTest.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="340">
-                      <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-                      <folding>
-                        <element signature="imports" expanded="true" />
-                        <element signature="e#583#584#0" expanded="true" />
-                        <element signature="e#629#630#0" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/IntegratorRKN.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="1088">
-                      <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
-                      <folding>
-                        <element signature="e#2625#2626#0" expanded="true" />
-                        <element signature="e#2664#2665#0" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/SecondDerivative.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="17">
-                      <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/ExperimentalFlyingObject.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="238">
-                      <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-                      <folding>
-                        <element signature="e#5235#5236#0" expanded="true" />
-                        <element signature="e#5316#5317#0" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/testing/IntegratorRKNTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="34">
+                  <caret line="2" column="30" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="30" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/testing/AlternativeBodyTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="279">
+                  <caret line="29" column="63" lean-forward="true" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/AlternativeBody.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="551">
+                  <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/IntegratorRKN.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="335">
+                  <caret line="46" column="16" lean-forward="true" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
       </split-second>
     </splitter>
   </component>
@@ -133,6 +124,7 @@
       <list>
         <option value="JavaFXApplication" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -154,7 +146,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/JavaFXApplication3.java" />
         <option value="$PROJECT_DIR$/src/Phys.java" />
-        <option value="$PROJECT_DIR$/src/Vector.java" />
         <option value="$PROJECT_DIR$/src/CelestBody3.java" />
         <option value="$PROJECT_DIR$/src/Model4.java" />
         <option value="$PROJECT_DIR$/src/Body.java" />
@@ -163,18 +154,22 @@
         <option value="$PROJECT_DIR$/src/RungeKutta.java" />
         <option value="$PROJECT_DIR$/src/FlyingBall.java" />
         <option value="$PROJECT_DIR$/src/SecondDerivative.java" />
+        <option value="$PROJECT_DIR$/src/Display.java" />
         <option value="$PROJECT_DIR$/testing/IntegratorRKNTest.java" />
-        <option value="$PROJECT_DIR$/src/IntegratorRKN.java" />
         <option value="$PROJECT_DIR$/testing/ExperimentalObjectTest.java" />
         <option value="$PROJECT_DIR$/src/ExperimentalFlyingObject.java" />
-        <option value="$PROJECT_DIR$/src/Display.java" />
+        <option value="$PROJECT_DIR$/src/IntegratorRKN.java" />
+        <option value="$PROJECT_DIR$/testing/VectorTest.java" />
+        <option value="$PROJECT_DIR$/testing/AlternativeBodyTest.java" />
+        <option value="$PROJECT_DIR$/src/Vector.java" />
+        <option value="$PROJECT_DIR$/src/AlternativeBody.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-4" />
-    <option name="width" value="3030" />
-    <option name="height" value="2106" />
+    <option name="x" value="1202" />
+    <option name="width" value="2673" />
+    <option name="height" value="2104" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -182,8 +177,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,6 +203,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,6 +215,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Software engineering/week3part2/ken1520-assignment-3-gezelligheid" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -230,6 +227,14 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -243,14 +248,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LaunchPad">
-    <configuration name="JavaFXApplication3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JavaFXApplication3" />
-      <module name="TitanIntellij" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.AlternativeBodyTest">
     <configuration name="LaunchPad" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LaunchPad" />
       <module name="TitanIntellij" />
@@ -258,26 +256,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RungeKutta" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RungeKutta" />
-      <module name="TitanIntellij" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExperimentalObjectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AlternativeBodyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TitanIntellij" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExperimentalObjectTest" />
+      <option name="MAIN_CLASS_NAME" value="AlternativeBodyTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntegratorRKNTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AlternativeBodyTest.compute_acceleration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TitanIntellij" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IntegratorRKNTest" />
+      <option name="MAIN_CLASS_NAME" value="AlternativeBodyTest" />
+      <option name="METHOD_NAME" value="compute_acceleration" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlternativeBodyTest.testStep" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TitanIntellij" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AlternativeBodyTest" />
+      <option name="METHOD_NAME" value="testStep" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VectorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TitanIntellij" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="VectorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -285,11 +296,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AlternativeBodyTest" />
+        <item itemvalue="JUnit.AlternativeBodyTest.testStep" />
+        <item itemvalue="JUnit.AlternativeBodyTest.compute_acceleration" />
+        <item itemvalue="JUnit.VectorTest" />
         <item itemvalue="Application.LaunchPad" />
-        <item itemvalue="JUnit.ExperimentalObjectTest" />
-        <item itemvalue="JUnit.IntegratorRKNTest" />
-        <item itemvalue="Application.RungeKutta" />
-        <item itemvalue="Application.JavaFXApplication3" />
       </list>
     </recent_temporary>
   </component>
@@ -324,6 +335,17 @@
       <workItem from="1558102902596" duration="1329000" />
       <workItem from="1558104428523" duration="5539000" />
       <workItem from="1558272290388" duration="6102000" />
+      <workItem from="1558444842585" duration="320000" />
+      <workItem from="1558606713389" duration="162000" />
+      <workItem from="1558613007680" duration="108000" />
+      <workItem from="1558773112937" duration="2514000" />
+      <workItem from="1558867668507" duration="8187000" />
+      <workItem from="1559043622263" duration="1440000" />
+      <workItem from="1559130594634" duration="78000" />
+      <workItem from="1560275726026" duration="1215000" />
+      <workItem from="1560505802022" duration="3495000" />
+      <workItem from="1560594282313" duration="6819000" />
+      <workItem from="1560609200545" duration="14577000" />
     </task>
     <task id="LOCAL-00001" summary="made a non-void method for Runge-Kutta">
       <created>1555235346673</created>
@@ -406,44 +428,45 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IntegratorRKNTest - 2019.04.23 at 14h 54m 40s.xml">
-      <configuration name="IntegratorRKNTest" configurationId="JUnit" />
+    <history-entry file="AlternativeBodyTest - 2019.06.15 at 20h 25m 59s.xml">
+      <configuration name="AlternativeBodyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntegratorRKNTest - 2019.04.23 at 14h 56m 24s.xml">
-      <configuration name="IntegratorRKNTest" configurationId="JUnit" />
+    <history-entry file="AlternativeBodyTest - 2019.06.15 at 20h 27m 19s.xml">
+      <configuration name="AlternativeBodyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntegratorRKNTest - 2019.04.23 at 14h 56m 33s.xml">
-      <configuration name="IntegratorRKNTest" configurationId="JUnit" />
+    <history-entry file="AlternativeBodyTest - 2019.06.15 at 20h 43m 01s.xml">
+      <configuration name="AlternativeBodyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntegratorRKNTest - 2019.04.30 at 15h 22m 27s.xml">
-      <configuration name="IntegratorRKNTest" configurationId="JUnit" />
+    <history-entry file="AlternativeBodyTest - 2019.06.15 at 20h 43m 08s.xml">
+      <configuration name="AlternativeBodyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntegratorRKNTest - 2019.04.30 at 17h 01m 28s.xml">
-      <configuration name="IntegratorRKNTest" configurationId="JUnit" />
+    <history-entry file="AlternativeBodyTest - 2019.06.15 at 21h 01m 41s.xml">
+      <configuration name="AlternativeBodyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExperimentalObjectTest - 2019.05.17 at 17h 59m 45s.xml">
-      <configuration name="ExperimentalObjectTest" configurationId="JUnit" />
+    <history-entry file="AlternativeBodyTest - 2019.06.15 at 21h 07m 15s.xml">
+      <configuration name="AlternativeBodyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExperimentalObjectTest - 2019.05.17 at 18h 00m 55s.xml">
-      <configuration name="ExperimentalObjectTest" configurationId="JUnit" />
+    <history-entry file="AlternativeBodyTest - 2019.06.15 at 21h 09m 08s.xml">
+      <configuration name="AlternativeBodyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExperimentalObjectTest - 2019.05.19 at 16h 48m 46s.xml">
-      <configuration name="ExperimentalObjectTest" configurationId="JUnit" />
+    <history-entry file="AlternativeBodyTest - 2019.06.15 at 21h 09m 14s.xml">
+      <configuration name="AlternativeBodyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExperimentalObjectTest - 2019.05.19 at 16h 49m 19s.xml">
-      <configuration name="ExperimentalObjectTest" configurationId="JUnit" />
+    <history-entry file="AlternativeBodyTest - 2019.06.15 at 21h 16m 44s.xml">
+      <configuration name="AlternativeBodyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExperimentalObjectTest - 2019.05.19 at 16h 49m 32s.xml">
-      <configuration name="ExperimentalObjectTest" configurationId="JUnit" />
+    <history-entry file="AlternativeBodyTest - 2019.06.15 at 21h 16m 51s.xml">
+      <configuration name="AlternativeBodyTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51073000" />
+    <option name="totallyTimeSpent" value="93635000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2208" height="1208" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09209302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -453,17 +476,17 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.86186045" visible="true" weight="0.1615599" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.86139536" visible="true" weight="0.15970288" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3974002" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49813953" weight="0.14298978" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4976744" weight="0.14298978" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.13813953" side_tool="true" visible="true" weight="0.1615599" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49870467" weight="0.3277311" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.13860466" side_tool="true" weight="0.1615599" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49870467" weight="0.3267974" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.3297561" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -474,6 +497,7 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32936803" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,31 +517,25 @@
     <MESSAGE value="added todo and comment" />
     <option name="LAST_COMMIT_MESSAGE" value="added todo and comment" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/testing/AlternativeBodyTest.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TitanIntellij$AlternativeBodyTest_compute_acceleration.ic" NAME="AlternativeBodyTest.compute_acceleration Coverage Results" MODIFIED="1560604140879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Phys.java" />
-    <entry file="file://$PROJECT_DIR$/src/Physics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CelestBody3.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Vector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1450">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Body.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2176">
-          <caret line="136" column="36" selection-start-line="136" selection-start-column="36" selection-end-line="136" selection-end-column="36" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CelestialBody.java">
       <provider selected="true" editor-type-id="text-editor" />
@@ -547,70 +565,140 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FlyingBall.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testing/IntegratorRKNTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/IntegratorRKN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="66" column="7" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
-          <folding>
-            <element signature="e#2625#2626#0" expanded="true" />
-            <element signature="e#2664#2665#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="544">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SecondDerivative.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+        <state relative-caret-position="51">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testing/ExperimentalObjectTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Physics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        <state relative-caret-position="221">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/VectorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="56" column="63" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExperimentalFlyingObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding>
-            <element signature="e#5235#5236#0" expanded="true" />
-            <element signature="e#5316#5317#0" expanded="true" />
+            <element signature="e#5006#5007#0" expanded="true" />
+            <element signature="e#5035#5036#0" expanded="true" />
+            <element signature="e#5072#5073#0" expanded="true" />
+            <element signature="e#5102#5103#0" expanded="true" />
+            <element signature="e#5137#5138#0" expanded="true" />
+            <element signature="e#5166#5167#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LaunchPad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="926">
-          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+        <state relative-caret-position="459">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Display.java">
+    <entry file="uml://JAVA/AlternativeBody">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>AlternativeBody</OriginalElement>
+          <nodes>
+            <node x="" y="">AlternativeBody</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="78.5" y="13.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Body.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
+        <state relative-caret-position="817">
+          <caret line="136" column="36" selection-start-line="136" selection-start-column="36" selection-end-line="136" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/ExperimentalObjectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="60" />
+          <folding>
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ExperimentalFlyingObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.5.0-M1/junit-platform-commons-1.5.0-M1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="354" selection-start-line="354" selection-end-line="354" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/IntegratorRKNTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="71" column="14" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IntegratorRKN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="46" column="16" lean-forward="true" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AlternativeBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/AlternativeBodyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="29" column="63" lean-forward="true" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

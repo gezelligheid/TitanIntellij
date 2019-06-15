@@ -18,8 +18,8 @@ public class IntegratorRKNTest {
                 h, a0);
 
         while (integratorRKN.getT0() <= tmax){
-            System.out.println("time ,t (s): " +integratorRKN.getT0()+ " pos, y (m): " + integratorRKN.getY0() +
-                    " velocity (m/s): " + integratorRKN.getDy0() + "acceleration: m/s^2: " + integratorRKN.getD2y0());
+            System.out.println("time ,t (s): " +integratorRKN.getT0()+ ", pos, y (m): " + integratorRKN.getY0() +
+                    ", velocity (m/s): " + integratorRKN.getDy0() + ", acceleration: m/s^2: " + integratorRKN.getD2y0());
             integratorRKN.step();
         }
 

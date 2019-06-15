@@ -1,12 +1,12 @@
 public class ExperimentalFlyingObject implements SecondDerivative {
-    private double objectDiameter;    // meters
-    private double objectDensity;     // kg/m^3
-    private double dragCoefficient;
+    private final double objectDiameter;    // meters
+    private final double objectDensity;     // kg/m^3
+    private final double dragCoefficient;
     private double gravAccel;       // m/s^2
     private double airDensity;
     private double fuelMass; // kg
     private double objectMass;// kg
-    private double oCrossArea;// object cross-section area, m^2
+    private final double oCrossArea;// object cross-section area, m^2
 
     public ExperimentalFlyingObject(double initialFuel) {
         //TODO properly set object dimensions
@@ -28,7 +28,7 @@ public class ExperimentalFlyingObject implements SecondDerivative {
     }
 
     /**
-     * @return the second derivative value for the movement of this flying ball at a given speed
+     * @return the second derivative value for the movement of this flying object at a given speed
      */
     @Override
     public double getValue(double independentVariable, double dependentVariable, double firstDerivativeInitial) {
@@ -130,5 +130,9 @@ public class ExperimentalFlyingObject implements SecondDerivative {
 
     public double getCapsuleMass(){
         return objectDensity *(Math.PI * Math.pow(objectDiameter, 3) / 6);
+    }
+
+    public double getGravAccel() {
+        return gravAccel;
     }
 }

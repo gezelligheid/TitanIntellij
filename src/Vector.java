@@ -1,4 +1,4 @@
-public class Vector {
+public class Vector implements Cloneable{
     private double X;
     private double Y;
     private double Z;
@@ -32,8 +32,13 @@ public class Vector {
             Z += v.Z;
         }
         return this;
-
-
+    }
+    public void add(Vector v){
+        if (v != null) {
+            X += v.X;
+            Y += v.Y;
+            Z += v.Z;
+        }
     }
 
     //difference between this vector and vector v.
@@ -60,6 +65,11 @@ public class Vector {
             zz = this.Z*this.Z;
         }
         return xx + yy + zz;
+    }
+    public void scale(double scalar){
+        this.X *= scalar;
+        this.Y *= scalar;
+        this.Z *= scalar;
     }
 
     public Vector multiply(double factor) {
@@ -134,5 +144,10 @@ public class Vector {
             this.Z /= factor;
         }
         return this;
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }
