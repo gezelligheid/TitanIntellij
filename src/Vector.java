@@ -3,11 +3,12 @@ public class Vector implements Cloneable{
     private double Y;
     private double Z;
 
-    public Vector(double PosX, double PosY, double PosZ) {
-        this.setX(PosX);
-        this.setY(PosY);
-        this.setZ(PosZ);
+    public Vector(double x, double y, double z) {
+        X = x;
+        Y = y;
+        Z = z;
     }
+
     public Vector() {
 
     }
