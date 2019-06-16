@@ -4,7 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dc9f633-455e-4d2d-b22a-486cde6813bf" name="Default Changelist" comment="new solar system logic completed">
+    <list default="true" id="6dc9f633-455e-4d2d-b22a-486cde6813bf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AlternativeBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AlternativeBody.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testing/AlternativeBodyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/testing/AlternativeBodyTest.java" afterDir="false" />
@@ -81,8 +81,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/testing/AlternativeBodyTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-532">
-                  <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+                <state relative-caret-position="-528">
+                  <caret line="188" column="8" selection-start-line="188" selection-start-column="8" selection-end-line="188" selection-end-column="8" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -93,8 +93,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/AlternativeBody.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="17" selection-start-line="17" selection-end-line="17" />
+                <state relative-caret-position="495">
+                  <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -154,8 +154,8 @@
         <option value="$PROJECT_DIR$/src/IntegratorRKN.java" />
         <option value="$PROJECT_DIR$/testing/VectorTest.java" />
         <option value="$PROJECT_DIR$/src/Vector.java" />
-        <option value="$PROJECT_DIR$/testing/AlternativeBodyTest.java" />
         <option value="$PROJECT_DIR$/src/AlternativeBody.java" />
+        <option value="$PROJECT_DIR$/testing/AlternativeBodyTest.java" />
       </list>
     </option>
   </component>
@@ -346,7 +346,7 @@
       <workItem from="1560609200545" duration="14994000" />
       <workItem from="1560672746773" duration="11471000" />
       <workItem from="1560693098460" duration="1894000" />
-      <workItem from="1560695736624" duration="343000" />
+      <workItem from="1560695736624" duration="656000" />
     </task>
     <task id="LOCAL-00001" summary="made a non-void method for Runge-Kutta">
       <created>1555235346673</created>
@@ -446,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560695869341</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="deleted redundant code in AlternativeBody">
+      <created>1560696120353</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1560696120353</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -482,7 +489,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107760000" />
+    <option name="totallyTimeSpent" value="108073000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2208" height="1208" extended-state="6" />
@@ -550,7 +557,8 @@
     <MESSAGE value="Started new solar system" />
     <MESSAGE value="acceleration for all bodies completed" />
     <MESSAGE value="new solar system logic completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="new solar system logic completed" />
+    <MESSAGE value="deleted redundant code in AlternativeBody" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted redundant code in AlternativeBody" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TitanIntellij$AlternativeBodyTest_compute_acceleration.ic" NAME="AlternativeBodyTest.compute_acceleration Coverage Results" MODIFIED="1560604140879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -714,8 +722,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testing/AlternativeBodyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-532">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="-528">
+          <caret line="188" column="8" selection-start-line="188" selection-start-column="8" selection-end-line="188" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -724,8 +732,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AlternativeBody.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="495">
+          <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
         </state>
       </provider>
     </entry>

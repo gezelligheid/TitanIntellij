@@ -3,9 +3,9 @@ import java.util.List;
 public class AlternativeBody {
     String name; // bodyName
     Vector position; // meters
-    Vector velocity; // meters per second
-    double mass; // kilograms
-    double radius; // meters
+    private Vector velocity; // meters per second
+    private double mass; // kilograms
+    private double radius; // meters
 
     public AlternativeBody(String name, Vector position, Vector velocity, double mass, double radius) {
         this.name = name;
