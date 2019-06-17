@@ -25,23 +25,23 @@ public class AlternativeBody {
     public Vector compute_acceleration(List<AlternativeBody> solarSystem) throws CloneNotSupportedException {
         Vector resultAcceleration = new Vector(0, 0, 0);
         for (AlternativeBody body : solarSystem
-        ) { if (!this.name.equals(body.name)){
-            final Vector distances = ((Vector) body.position.clone()).subtract(this.position);
-            Vector normDistances = ((Vector) distances.clone()).normalize();
-            Vector currentAcceleration = normDistances.multiply((Physics.G * body.mass) / distances.squareLength());
-            resultAcceleration.add(currentAcceleration);
-        }
+        ) {
+            if (!this.name.equals(body.name)) {
+                final Vector distances = ((Vector) body.position.clone()).subtract(this.position);
+                Vector normDistances = ((Vector) distances.clone()).normalize();
+                Vector currentAcceleration = normDistances.multiply((Physics.G * body.mass) / distances.squareLength());
+                resultAcceleration.add(currentAcceleration);
+            }
 
         }
         return resultAcceleration;
     }
 
 
-
     /**
      * moves the body under influence of a list of other mass objects
      *
-     * @param dt        time step
+     * @param dt                time step
      * @param alternativeBodies the other mass objects
      */
     public void step(double dt, List<AlternativeBody> alternativeBodies) throws CloneNotSupportedException {
@@ -49,15 +49,15 @@ public class AlternativeBody {
         final Vector k1Vel = this.compute_acceleration(alternativeBodies);// k1 for the change velocity vector
         final Vector k2Pos = ((Vector) this.velocity.clone()).sum(((Vector) k1Vel.clone()).multiply(dt / 2));
         AlternativeBody k1StateBody = new AlternativeBody(this.name,
-                ((Vector) this.position.clone()).sum(((Vector) k1Pos.clone()).multiply(dt / 2)),this.velocity,this.mass,this.radius);
+                ((Vector) this.position.clone()).sum(((Vector) k1Pos.clone()).multiply(dt / 2)), this.velocity, this.mass, this.radius);
         final Vector k2Vel = k1StateBody.compute_acceleration(alternativeBodies);
         final Vector k3Pos = ((Vector) this.velocity.clone()).sum(((Vector) k2Vel.clone()).multiply(dt / 2));
         AlternativeBody k2StateBody = new AlternativeBody(this.name,
-                ((Vector) this.position.clone()).sum(((Vector) k2Pos.clone()).multiply(dt / 2)),this.velocity,this.mass,this.radius);
+                ((Vector) this.position.clone()).sum(((Vector) k2Pos.clone()).multiply(dt / 2)), this.velocity, this.mass, this.radius);
         final Vector k3Vel = k2StateBody.compute_acceleration(alternativeBodies);
         final Vector k4Pos = ((Vector) this.velocity.clone()).sum(((Vector) k3Vel.clone()).multiply(dt));
         AlternativeBody k3StateBody = new AlternativeBody(this.name,
-                ((Vector) this.position.clone()).sum(((Vector) k3Pos.clone()).multiply(dt)),this.velocity,this.mass,this.radius);
+                ((Vector) this.position.clone()).sum(((Vector) k3Pos.clone()).multiply(dt)), this.velocity, this.mass, this.radius);
         final Vector k4Vel = k3StateBody.compute_acceleration(alternativeBodies);
 
         Vector kPosTotal = new Vector(0, 0, 0);
@@ -79,6 +79,29 @@ public class AlternativeBody {
         this.velocity.add(kVelTotal);
 
 
+    }
+
+    public Vector getPosition() {
+        return position;
+    }
+
+
+    /**
+     * does one step for the whole solar system
+     *
+     * @return updated x,y values for each body at once
+     */
+    public double[][] getAndStepAllBodies(double dt, List<AlternativeBody> solarSystem) throws CloneNotSupportedException {
+        double[][] xyPositions = new double[solarSystem.size()][2];
+        int count = 0;
+        for (AlternativeBody planet : solarSystem
+        ) {
+            xyPositions[count][0] = planet.position.getX();
+            xyPositions[count][1] = planet.position.getY();
+            planet.step(dt, solarSystem);
+            count++;
+        }
+        return xyPositions;
     }
 
 }

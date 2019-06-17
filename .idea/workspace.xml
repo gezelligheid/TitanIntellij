@@ -32,7 +32,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Display.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="952">
+                <state relative-caret-position="850">
                   <caret line="56" column="63" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="63" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -47,11 +47,23 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Vector.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="286">
+                <state relative-caret-position="-853">
                   <caret line="42" selection-start-line="42" selection-end-line="42" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/testing/AlternativeBodyTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="336">
+                  <caret line="203" column="27" selection-start-line="203" selection-start-column="27" selection-end-line="203" selection-end-column="33" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -79,13 +91,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/testing/AlternativeBodyTest.java">
+            <entry file="file://$PROJECT_DIR$/src/ExperimentalFlyingObject.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-528">
-                  <caret line="188" column="8" selection-start-line="188" selection-start-column="8" selection-end-line="188" selection-end-column="8" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="394">
+                  <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
                 </state>
               </provider>
             </entry>
@@ -93,8 +102,12 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/AlternativeBody.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
+                <state relative-caret-position="435">
+                  <caret line="101" column="20" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#3828#3829#0" expanded="true" />
+                    <element signature="e#3859#3860#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -154,16 +167,16 @@
         <option value="$PROJECT_DIR$/src/IntegratorRKN.java" />
         <option value="$PROJECT_DIR$/testing/VectorTest.java" />
         <option value="$PROJECT_DIR$/src/Vector.java" />
-        <option value="$PROJECT_DIR$/src/AlternativeBody.java" />
         <option value="$PROJECT_DIR$/testing/AlternativeBodyTest.java" />
+        <option value="$PROJECT_DIR$/src/AlternativeBody.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-13" />
-    <option name="y" value="-13" />
-    <option name="width" value="2678" />
-    <option name="height" value="2107" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -171,7 +184,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,6 +211,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -346,7 +359,8 @@
       <workItem from="1560609200545" duration="14994000" />
       <workItem from="1560672746773" duration="11471000" />
       <workItem from="1560693098460" duration="1894000" />
-      <workItem from="1560695736624" duration="656000" />
+      <workItem from="1560695736624" duration="1940000" />
+      <workItem from="1560774884235" duration="3143000" />
     </task>
     <task id="LOCAL-00001" summary="made a non-void method for Runge-Kutta">
       <created>1555235346673</created>
@@ -453,13 +467,17 @@
       <option name="project" value="LOCAL" />
       <updated>1560696120353</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="did some encapsulation">
+      <created>1560696475628</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1560696475628</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AlternativeBodyTest - 2019.06.15 at 21h 16m 44s.xml">
-      <configuration name="AlternativeBodyTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AlternativeBodyTest - 2019.06.15 at 21h 16m 51s.xml">
       <configuration name="AlternativeBodyTest" configurationId="JUnit" />
     </history-entry>
@@ -487,15 +505,18 @@
     <history-entry file="AlternativeBodyTest_dependentSystemTest - 2019.06.16 at 16h 12m 33s.xml">
       <configuration name="AlternativeBodyTest.dependentSystemTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AlternativeBodyTest_dependentSystemTest - 2019.06.17 at 14h 37m 51s.xml">
+      <configuration name="AlternativeBodyTest.dependentSystemTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108073000" />
+    <option name="totallyTimeSpent" value="112500000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2208" height="1208" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06511628" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16375838" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -505,17 +526,17 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8599592" weight="0.16029823" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49953488" visible="true" weight="0.3955432" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8590604" visible="true" weight="0.12322946" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49953488" weight="0.3955432" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.4972093" visible="true" weight="0.14298978" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4972093" weight="0.14298978" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5027907" side_tool="true" visible="true" weight="0.14298978" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49870467" weight="0.3267974" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.1409396" side_tool="true" visible="true" weight="0.12322946" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49813953" weight="0.3259053" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.3297561" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -558,7 +579,8 @@
     <MESSAGE value="acceleration for all bodies completed" />
     <MESSAGE value="new solar system logic completed" />
     <MESSAGE value="deleted redundant code in AlternativeBody" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted redundant code in AlternativeBody" />
+    <MESSAGE value="did some encapsulation" />
+    <option name="LAST_COMMIT_MESSAGE" value="did some encapsulation" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TitanIntellij$AlternativeBodyTest_compute_acceleration.ic" NAME="AlternativeBodyTest.compute_acceleration Coverage Results" MODIFIED="1560604140879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -655,13 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExperimentalFlyingObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.5.0-M1/junit-platform-commons-1.5.0-M1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -678,7 +693,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Display.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
+        <state relative-caret-position="850">
           <caret line="56" column="63" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -701,15 +716,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="-853">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testing/IntegratorRKNTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -720,10 +728,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ExperimentalFlyingObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/IntegratorRKNTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testing/AlternativeBodyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-528">
-          <caret line="188" column="8" selection-start-line="188" selection-start-column="8" selection-end-line="188" selection-end-column="8" />
+        <state relative-caret-position="336">
+          <caret line="203" column="27" selection-start-line="203" selection-start-column="27" selection-end-line="203" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -732,8 +754,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AlternativeBody.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
+        <state relative-caret-position="435">
+          <caret line="101" column="20" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
+          <folding>
+            <element signature="e#3828#3829#0" expanded="true" />
+            <element signature="e#3859#3860#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
