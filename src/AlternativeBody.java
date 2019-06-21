@@ -86,6 +86,10 @@ public class AlternativeBody {
     }
 
 
+    public String getName() {
+        return name;
+    }
+
     /**
      * does one step for the whole solar system
      *
@@ -100,6 +104,7 @@ public class AlternativeBody {
             xyPositions[count][1] = planet.position.getY();
             planet.step(dt, solarSystem);
             count++;
+
         }
         return xyPositions;
     }

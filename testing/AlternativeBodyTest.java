@@ -262,13 +262,15 @@ class AlternativeBodyTest {
 
         for (int i = 0; i <= 366; i++) {
 
-            for (AlternativeBody planet : solarSystem
+            List<AlternativeBody> tempSolarSystem = (List<AlternativeBody>) ((ArrayList<AlternativeBody>) solarSystem).clone();
+            for (AlternativeBody planet : tempSolarSystem
             ) {
                 System.out.println("day " + i + ", " + planet.name + ". x: " + planet.position.getX() +
                         ", y: " + planet.position.getY() + ", z:" + planet.position.getZ());
                 planet.step(dt, solarSystem);
 
             }
+            solarSystem = tempSolarSystem;
 
         }
 
