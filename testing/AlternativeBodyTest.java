@@ -43,17 +43,17 @@ class AlternativeBodyTest {
 //        final double SUN_RADIUS = 695700000.0;
 //        double EARTH_X0 = -147_095_000_000.0;
 //        double EARTH_Y0 = 0.0;
-//        Vector earthPosition = new Vector(EARTH_X0, EARTH_Y0, 0);
+//        Vector EARTH_POS0 = new Vector(EARTH_X0, EARTH_Y0, 0);
 //        double EARTH_VX0 = 0.0;
 //        double EARTH_VY0 = -30300.0;
-//        Vector earthVelocity = new Vector(EARTH_VX0, EARTH_VY0, 0);
+//        Vector EARTH_VEL0 = new Vector(EARTH_VX0, EARTH_VY0, 0);
 //        final double EARTH_MASS = 5.972e24;
 //        final double EARTH_RADIUS = 6371000.0;
 //        final double dt = 86400.0; // 1 earth day in seconds
 //
 //        AlternativeBody sun = new AlternativeBody("Sun", new Vector(0, 0, 0),
 //                new Vector(0, 0, 0), SUN_MASS, SUN_RADIUS);
-//        AlternativeBody earth = new AlternativeBody("Earth", earthPosition, earthVelocity, EARTH_MASS, EARTH_RADIUS);
+//        AlternativeBody earth = new AlternativeBody("Earth", EARTH_POS0, EARTH_VEL0, EARTH_MASS, EARTH_RADIUS);
 //
 //
 ////        // simulate 1 earth year
@@ -80,10 +80,10 @@ class AlternativeBodyTest {
 //        final double SUN_RADIUS = 695700000.0;
 //        double EARTH_X0 = -147_095_000_000.0;
 //        double EARTH_Y0 = 0.0;
-//        Vector earthPosition = new Vector(EARTH_X0, EARTH_Y0, 0);
+//        Vector EARTH_POS0 = new Vector(EARTH_X0, EARTH_Y0, 0);
 //        double EARTH_VX0 = 0.0;
 //        double EARTH_VY0 = -30300.0;
-//        Vector earthVelocity = new Vector(EARTH_VX0, EARTH_VY0, 0);
+//        Vector EARTH_VEL0 = new Vector(EARTH_VX0, EARTH_VY0, 0);
 //        final double EARTH_MASS = 5.972e24;
 //        final double EARTH_RADIUS = 6371000.0;
 //        final double dt = 86400.0; // 1 earth day in seconds
@@ -123,7 +123,7 @@ class AlternativeBodyTest {
 //
 //        AlternativeBody sun = new AlternativeBody("Sun", new Vector(0, 0, 0),
 //                new Vector(0, 0, 0), SUN_MASS, SUN_RADIUS);
-//        AlternativeBody earth = new AlternativeBody("Earth", earthPosition, earthVelocity, EARTH_MASS, EARTH_RADIUS);
+//        AlternativeBody earth = new AlternativeBody("Earth", EARTH_POS0, EARTH_VEL0, EARTH_MASS, EARTH_RADIUS);
 //        AlternativeBody mercury = new AlternativeBody("Mercury", MERCURY_POS0, MERCURY_VEL0, MERCURY_MASS, MERCURY_RADIUS);
 //        AlternativeBody venus = new AlternativeBody("Venus", VENUS_POS0, VENUS_VEL0, VENUS_MASS, VENUS_RADIUS);
 //        AlternativeBody mars = new AlternativeBody("Mars", MARS_POS0, MARS_VEL0, MARS_MASS, MARS_RADIUS);
