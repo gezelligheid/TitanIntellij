@@ -86,8 +86,8 @@ public class Solar extends Application{
     final double NEPTUNE_RADIUS = 24341000;
 
 
-    final Vector SPACECRAFT_VEL0 = new Vector(-150000, -1000, 0);
-    final Vector SPACECRAFT_POS0 = new Vector(EARTH_POS0.getX()+500, EARTH_POS0.getY(),EARTH_POS0.getZ());
+    final Vector SPACECRAFT_VEL0 = new Vector(35000, -35000, 0);
+    final Vector SPACECRAFT_POS0 = new Vector(EARTH_POS0.getX()+EARTH_RADIUS, EARTH_POS0.getY()-EARTH_RADIUS,EARTH_POS0.getZ());
     final double SPACECRAFT_MASS = 7080; // kg
     final double SPACECRAFT_RADIUS = 3; // meters
 

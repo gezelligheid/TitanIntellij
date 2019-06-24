@@ -6,6 +6,7 @@ public class AlternativeBody {
     private Vector velocity; // meters per second
     private double mass; // kilograms
     private double radius; // meters
+    private double fuelMass; //
 
     public AlternativeBody(String name, Vector position, Vector velocity, double mass, double radius) {
         this.name = name;
@@ -81,6 +82,33 @@ public class AlternativeBody {
 
     }
 
+    /**
+     * verifies that a closeness between bodies is reached
+     *
+     * @param distance threshold distance
+     * @param body1
+     * @param body2
+     *
+     * */
+    public boolean isWithinDistance(double distance, AlternativeBody body1, AlternativeBody body2) throws CloneNotSupportedException {
+        Vector position1 = (Vector) body1.getPosition().clone();
+        Vector position2 = (Vector) body2.getPosition().clone();
+        return position1.distance(position2) <= distance;
+    }
+    /**
+     * manipulates the velocity of the spacecraft in specified x, y, z directions.
+     * additionally calculates the fuel consumed to accomplish this.
+     *
+     *
+     * @param d2x change in x speed
+     * @param d2y change in y speed
+     * @param d2z change in z speed
+     * */
+    public void addImpulse(double d2x,double d2y,double d2z){
+
+
+    }
+
     public Vector getPosition() {
         return position;
     }
@@ -90,23 +118,21 @@ public class AlternativeBody {
         return name;
     }
 
-    /**
-     * does one step for the whole solar system
-     *
-     * @return updated x,y values for each body at once
-     */
-    public double[][] getAndStepAllBodies(double dt, List<AlternativeBody> solarSystem) throws CloneNotSupportedException {
-        double[][] xyPositions = new double[solarSystem.size()][2];
-        int count = 0;
-        for (AlternativeBody planet : solarSystem
-        ) {
-            xyPositions[count][0] = planet.position.getX();
-            xyPositions[count][1] = planet.position.getY();
-            planet.step(dt, solarSystem);
-            count++;
 
-        }
-        return xyPositions;
+
+    public Vector getVelocity() {
+        return velocity;
     }
 
+    public void setVelocity(Vector velocity) {
+        this.velocity = velocity;
+    }
+
+    public double getFuelMass() {
+        return fuelMass;
+    }
+
+    public void setFuelMass(double fuelMass) {
+        this.fuelMass = fuelMass;
+    }
 }
