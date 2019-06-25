@@ -86,8 +86,12 @@ public class Solar extends Application{
     final double NEPTUNE_RADIUS = 24341000;
 
 
+    final double SPACECRAFT_DESIRED_ALTITUDE = 500_000;
+
     final Vector SPACECRAFT_VEL0 = new Vector(35000, -35000, 0);
-    final Vector SPACECRAFT_POS0 = new Vector(EARTH_POS0.getX()+EARTH_RADIUS, EARTH_POS0.getY()-EARTH_RADIUS,EARTH_POS0.getZ());
+    final Vector SPACECRAFT_POS0 = ((Vector) EARTH_POS0.clone()).normalize().multiply(EARTH_POS0.length() +
+            SPACECRAFT_DESIRED_ALTITUDE + EARTH_RADIUS);
+//    final Vector SPACECRAFT_POS0 = new Vector(EARTH_POS0.getX()+EARTH_RADIUS, EARTH_POS0.getY()-EARTH_RADIUS,EARTH_POS0.getZ());
     final double SPACECRAFT_MASS = 7080; // kg
     final double SPACECRAFT_RADIUS = 3; // meters
 
@@ -107,6 +111,10 @@ public class Solar extends Application{
 
     private double daysPassed = 0;
     private double yearsPassed = 0;
+
+    public Solar() throws CloneNotSupportedException {
+    }
+
     @Override
     public void start(Stage primaryStage) throws Exception, CloneNotSupportedException  {
 

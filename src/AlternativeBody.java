@@ -7,6 +7,7 @@ public class AlternativeBody {
     private double mass; // kilograms
     private double radius; // meters
     private double fuelMass; //
+    private final double SPECIFIC_IMPULSE = 400; // m/s
 
     public AlternativeBody(String name, Vector position, Vector velocity, double mass, double radius) {
         this.name = name;
@@ -88,23 +89,38 @@ public class AlternativeBody {
      * @param distance threshold distance
      * @param body1
      * @param body2
-     *
-     * */
+     */
     public boolean isWithinDistance(double distance, AlternativeBody body1, AlternativeBody body2) throws CloneNotSupportedException {
         Vector position1 = (Vector) body1.getPosition().clone();
         Vector position2 = (Vector) body2.getPosition().clone();
         return position1.distance(position2) <= distance;
     }
+
     /**
      * manipulates the velocity of the spacecraft in specified x, y, z directions.
-     * additionally calculates the fuel consumed to accomplish this.
-     *
+     * additionally calculates the fuel consumed to accomplish this according to the Tsiolkovski
+     * equation
      *
      * @param d2x change in x speed
      * @param d2y change in y speed
      * @param d2z change in z speed
-     * */
-    public void addImpulse(double d2x,double d2y,double d2z){
+     */
+    public void addImpulse(double d2x, double d2y, double d2z) {
+
+        double absoluteTotalVelChange = Math.abs(d2x) + Math.abs(d2y) + Math.abs(d2z);
+        double newMassTotal = (mass + fuelMass) * Math.exp(-(absoluteTotalVelChange / SPECIFIC_IMPULSE));
+        // check if sufficient fuel is available
+
+        try {
+            if (newMassTotal >= mass) {
+                fuelMass = newMassTotal - mass;
+                this.velocity.setX(velocity.getX() + d2x);
+                this.velocity.setY(velocity.getY() + d2y);
+                this.velocity.setZ(velocity.getZ() + d2z);
+            } else throw new ArithmeticException();
+        } catch (ArithmeticException exception){
+            System.out.println("not enough fuel");
+        }
 
 
     }
@@ -117,7 +133,6 @@ public class AlternativeBody {
     public String getName() {
         return name;
     }
-
 
 
     public Vector getVelocity() {
