@@ -298,4 +298,25 @@ class AlternativeBodyTest {
 
     }
 
+    @Test
+    void addImpulseTest(){
+        final Vector SPACECRAFT_VEL0 = new Vector(0, 0, 0);
+        final Vector SPACECRAFT_POS0 = new Vector(0,0,0);
+        final double SPACECRAFT_MASS = 100; // kg
+        double initialFuel = 30000; // kg
+        final double SPACECRAFT_RADIUS = 3; // meters
+
+        AlternativeBody spacecraft = new AlternativeBody("Spacecraft", SPACECRAFT_POS0, SPACECRAFT_VEL0, SPACECRAFT_MASS, SPACECRAFT_RADIUS);
+
+        spacecraft.setFuelMass(initialFuel);
+
+        spacecraft.addImpulse(-2836.06, -9890.517, 0);
+        System.out.println("fuel after move is: " + spacecraft.getFuelMass());
+        System.out.println("new velocity is: " + spacecraft.getVelocity());
+
+        spacecraft.addImpulse(10,0, 0);
+        System.out.println("fuel after move is: " + spacecraft.getFuelMass());
+        System.out.println("new velocity is: " + spacecraft.getVelocity());
+    }
+
 }

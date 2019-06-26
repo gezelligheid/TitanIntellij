@@ -7,7 +7,7 @@ public class AlternativeBody {
     private double mass; // kilograms
     private double radius; // meters
     private double fuelMass; //
-    private final double SPECIFIC_IMPULSE = 400; // m/s
+    private final double SPECIFIC_IMPULSE = 3000; // m/s
 
     public AlternativeBody(String name, Vector position, Vector velocity, double mass, double radius) {
         this.name = name;
@@ -50,6 +50,7 @@ public class AlternativeBody {
         final Vector k1Pos = (Vector) this.velocity.clone(); // k1 for the change in position vector
         final Vector k1Vel = this.compute_acceleration(alternativeBodies);// k1 for the change velocity vector
         final Vector k2Pos = ((Vector) this.velocity.clone()).sum(((Vector) k1Vel.clone()).multiply(dt / 2));
+        // object is introduced for the accelaration method to work
         AlternativeBody k1StateBody = new AlternativeBody(this.name,
                 ((Vector) this.position.clone()).sum(((Vector) k1Pos.clone()).multiply(dt / 2)), this.velocity, this.mass, this.radius);
         final Vector k2Vel = k1StateBody.compute_acceleration(alternativeBodies);
@@ -107,7 +108,7 @@ public class AlternativeBody {
      */
     public void addImpulse(double d2x, double d2y, double d2z) {
 
-        double absoluteTotalVelChange = Math.abs(d2x) + Math.abs(d2y) + Math.abs(d2z);
+        double absoluteTotalVelChange = Math.sqrt(Math.pow(d2x, 2) + Math.pow(d2y, 2) + Math.pow(d2z, 2));
         double newMassTotal = (mass + fuelMass) * Math.exp(-(absoluteTotalVelChange / SPECIFIC_IMPULSE));
         // check if sufficient fuel is available
 
@@ -118,7 +119,7 @@ public class AlternativeBody {
                 this.velocity.setY(velocity.getY() + d2y);
                 this.velocity.setZ(velocity.getZ() + d2z);
             } else throw new ArithmeticException();
-        } catch (ArithmeticException exception){
+        } catch (ArithmeticException exception) {
             System.out.println("not enough fuel");
         }
 
