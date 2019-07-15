@@ -1,5 +1,5 @@
 # TitanIntellij
-The freshly restructured project
+Solar system model using 4th order Runge-Kutta method
 
 run /src/Solar.java to see some planets moving
 
